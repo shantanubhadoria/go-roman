@@ -10,11 +10,11 @@
     4
 
 ## go-roman
---
+
     import "github.com/shantanubhadoria/go-roman/roman"
 
 Package roman provides methods for verifying if a number is a valid roman
-numeral and finding its indo-arabic equivalent
+numeral and finding its indo-arabic equivalent. the go-roman command uses the same package
 
 Author: Shantanu Bhadoria
 
