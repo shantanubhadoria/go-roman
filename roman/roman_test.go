@@ -28,6 +28,8 @@ var romanNumerals = []romanMap{
 	romanMap{"M", 1000},
 	romanMap{"XIII", 13},
 	romanMap{"XIV", 14},
+	romanMap{"CD", 400},
+	romanMap{"MMCDXVI", 2416},
 }
 
 func TestIsRoman(t *testing.T) {
