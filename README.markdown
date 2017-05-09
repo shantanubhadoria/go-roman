@@ -5,6 +5,7 @@
     $ go get github.com/shantanubhadoria/go-roman
 
 ## Running this on the command line
+Please ensure that your $GOPATH/bin is in your $PATH. If unsure run `export PATH=$PATH:$GOPATH/bin`
 
     $ go-roman IV
     4
