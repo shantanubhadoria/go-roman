@@ -16,8 +16,6 @@
 Package roman provides methods for verifying if a number is a valid roman
 numeral and finding its indo-arabic equivalent. the go-roman command uses the same package
 
-Author: Shantanu Bhadoria
-
 ## Usage
 
 #### func  IsRoman
@@ -41,3 +39,7 @@ func ToIndoArabic(roman string) (int, error)
 ```
 ToIndoArabic converts roman numeral to Indo-Arabic numerals. The function
 returns 0, error in case of invalid roman numeral and number,nil for valid input
+
+## Author
+
+Shantanu Bhadoria
