@@ -15,7 +15,7 @@ Please ensure that your $GOPATH/bin is in your $PATH. If unsure run `export PATH
     import "github.com/shantanubhadoria/go-roman/roman"
 
 Package roman provides methods for verifying if a number is a valid roman
-numeral and finding its indo-arabic equivalent. the go-roman command uses the same package
+numeral and for finding its indo-arabic equivalent. The go-roman command uses the same package.
 
 ## Usage
 
@@ -29,9 +29,9 @@ valid roman numerals and false otherwise
 
 Rules(from wikipedia):
 
-Numbers like V,L,D fall under non repeatable category, Max unbroken repetition
-is 3 Special cases for complex digits where only certain combinations are
-allowed
+Numbers like V,L,D fall under non repeatable category, maximum unbroken repetition
+is 3, special cases for complex digits where only certain combinations are
+allowed like CD is allowed but ID is invalid etc.
 
 #### func  ToIndoArabic
 
