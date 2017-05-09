@@ -21,6 +21,10 @@ var digitsMap = map[string]int{"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 
 // Max unbroken repetition is 3
 // Special cases for complex digits where only certain combinations are allowed
 func IsRoman(roman string) bool {
+	if roman == "" {
+		return false
+	}
+
 	romanb := []byte(strings.ToUpper(roman))
 	check, _ := regexp.Match("^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$", romanb)
 	return check
@@ -35,7 +39,7 @@ func ToIndoArabic(roman string) (int, error) {
 
 	// Keep track of the last parsed digit to look for compound digits like IV when prevDigit < currentDigit
 	previousValue := 1000 // Assign maxval among all digits to start with
-	romanb := []byte(roman)
+	romanb := []byte(strings.ToUpper(roman))
 	totalValue := 0
 	for _, rDigit := range romanb {
 		value := digitsMap[string(rDigit)]

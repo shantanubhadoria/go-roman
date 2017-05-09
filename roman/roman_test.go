@@ -29,6 +29,7 @@ var romanNumerals = []romanMap{
 	romanMap{"XIII", 13},
 	romanMap{"XIV", 14},
 	romanMap{"CD", 400},
+	romanMap{"CIV", 104},
 	romanMap{"MMCDXVI", 2416},
 }
 
